@@ -51,3 +51,13 @@ const year = document.querySelector<HTMLElement>('#year');
 if (year) {
   year.textContent = new Intl.DateTimeFormat('fa-IR', { year: 'numeric' }).format(new Date());
 }
+
+const faqItems = document.querySelectorAll<HTMLDetailsElement>('.faq-list details');
+faqItems.forEach((item) => {
+  item.addEventListener('toggle', () => {
+    if (!item.open) return;
+    faqItems.forEach((otherItem) => {
+      if (otherItem !== item) otherItem.open = false;
+    });
+  });
+});
