@@ -1,4 +1,5 @@
 import '../styles.css';
+import './football-theme.css';
 import { downloadLinks, type DownloadSource } from './config';
 
 const toast = document.querySelector<HTMLElement>('.toast');
@@ -61,3 +62,21 @@ faqItems.forEach((item) => {
     });
   });
 });
+
+const heroVisual = document.querySelector<HTMLElement>('.hero-visual');
+if (heroVisual) {
+  const stadiumLights = document.createElement('div');
+  stadiumLights.className = 'stadium-lights';
+  stadiumLights.setAttribute('aria-hidden', 'true');
+
+  const football = document.createElement('div');
+  football.className = 'football-mark';
+  football.setAttribute('aria-hidden', 'true');
+
+  const cornerFlag = document.createElement('div');
+  cornerFlag.className = 'corner-flag';
+  cornerFlag.setAttribute('aria-hidden', 'true');
+
+  heroVisual.prepend(stadiumLights);
+  heroVisual.append(football, cornerFlag);
+}
