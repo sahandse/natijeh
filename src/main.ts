@@ -1,5 +1,6 @@
 import '../styles.css';
 import './football-theme.css';
+import './iran-matchday.css';
 import { downloadLinks, type DownloadSource } from './config';
 
 const toast = document.querySelector<HTMLElement>('.toast');
