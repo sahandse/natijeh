@@ -30,8 +30,8 @@
   <main id="top">
     <section class="hero shell">
       <div class="hero-copy">
-        <div class="eyebrow"><span></span> مرکز فوتبال فارسی شما</div>
-        <h1>فوتبال،<br><em>لحظه‌به‌لحظه.</em></h1>
+        <div class="eyebrow"><span></span> اپ فوتبالی برای روز مسابقه</div>
+        <h1>هر بازی.<br><em>یک نتیجه.</em></h1>
         <p>از نتیجه زنده و ترکیب تیم‌ها تا جدول لیگ، جزئیات مسابقه و اعلان گل؛ «نتیجه» همه‌چیز را سریع، فارسی و بدون شلوغی در اختیارت می‌گذارد.</p>
         <div class="hero-actions" id="download">
           <a class="button primary" data-download="direct" href="https://github.com/sahandse/natijeh/releases/latest" target="_blank" rel="noopener">
@@ -57,8 +57,10 @@
       <div class="hero-visual" aria-label="نمایی از برنامه نتیجه">
         <div class="orb orb-one"></div><div class="orb orb-two"></div>
         <div class="score-card floating">
-          <span class="live-dot"></span><b>زنده</b><small>اعلان لحظه‌ای گل</small>
+          <span class="live-dot"></span><b>زنده · ۷۸′</b><small>اعلان لحظه‌ای گل</small>
         </div>
+        <div class="match-chip chip-goal"><b>گل!</b><small>همین چند ثانیه پیش</small></div>
+        <div class="match-chip chip-form"><span>ب</span><i>● ● ● ○ ●</i><small>فرم ۵ بازی اخیر</small></div>
         <div class="phone phone-main"><img src="assets/screens/home.jpg" alt="صفحه اصلی برنامه نتیجه"></div>
         <div class="phone phone-back"><img src="assets/screens/match.jpg" alt="جزئیات مسابقه در برنامه نتیجه"></div>
       </div>
@@ -104,6 +106,41 @@
       </div>
     </section>
 
+    <section class="tactics-section" aria-label="تجربه فوتبالی نتیجه">
+      <div class="shell tactics-grid">
+        <div class="tactics-board" aria-hidden="true">
+          <div class="pitch-line center-line"></div><div class="pitch-circle"></div>
+          <div class="goal goal-top"></div><div class="goal goal-bottom"></div>
+          <span class="player p1">۱</span><span class="player p2">۴</span><span class="player p3">۶</span>
+          <span class="player p4">۸</span><span class="player p5 active">۱۰</span><span class="player p6">۹</span>
+          <div class="ball-path"></div>
+          <div class="tactic-tag"><small>چیدمان منتخب</small><b>۴–۳–۳</b></div>
+        </div>
+        <div class="tactics-copy">
+          <span class="section-kicker">فراتر از یک نتیجه</span>
+          <h2>بازی را ببین،<br><em>نه فقط عدد را.</em></h2>
+          <p>جریان مسابقه، ترکیب تیم‌ها، فرم اخیر و لحظه‌های مهم را در یک نمای سریع و فوتبالی دنبال کن.</p>
+          <div class="insight-list">
+            <article><b>۰۱</b><div><h3>ترکیب و آرایش تیم</h3><p>بازیکنان و چیدمان دو تیم را پیش از سوت شروع مرور کن.</p></div></article>
+            <article><b>۰۲</b><div><h3>نبض زنده مسابقه</h3><p>فشار حملات و رخدادهای مهم را در طول بازی از دست نده.</p></div></article>
+            <article><b>۰۳</b><div><h3>فرم و جدول لیگ</h3><p>نتیجه بازی را در کنار فرم تیم‌ها و جایگاه تازه جدول ببین.</p></div></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="install-section shell">
+      <div class="install-head"><span class="section-kicker">نصب سریع و امن</span><h2>سه لمس تا شروع مسابقه.</h2><p>نسخه رسمی ۱.۴۰.۱ · فایل APK اندروید</p></div>
+      <div class="install-steps">
+        <article><span>۱</span><div><b>دریافت فایل</b><small>از دکمه دانلود مستقیم</small></div></article>
+        <i></i>
+        <article><span>۲</span><div><b>اجازه نصب</b><small>فقط برای مرورگر فعلی</small></div></article>
+        <i></i>
+        <article><span>۳</span><div><b>شروع نتیجه</b><small>تیم‌های محبوبت را انتخاب کن</small></div></article>
+      </div>
+      <a class="button primary install-download" data-download="direct" href="#" target="_blank" rel="noopener"><span class="button-icon">↓</span><span><small>آخرین نسخه رسمی</small>دانلود مستقیم نتیجه</span></a>
+    </section>
+
     <section class="section gallery-section" id="screens">
       <div class="shell section-heading gallery-heading"><span>خودت ببین</span><h2>یک تجربه تمیز،<br>برای عاشقان فوتبال.</h2><p>برای دیدن تصویر کامل، آن را انتخاب کن.</p></div>
       <div class="gallery" aria-label="تصاویر برنامه">
@@ -138,6 +175,7 @@
 
   <dialog id="lightbox"><button aria-label="بستن">×</button><img alt="تصویر بزرگ برنامه نتیجه"></dialog>
   <div class="toast" role="status" aria-live="polite">لینک این فروشگاه به‌زودی اضافه می‌شود.</div>
+  <a class="mobile-download" data-download="direct" href="#"><span>دانلود نسخه ۱.۴۰.۱</span><b>↓</b></a>
   <a class="support-button" href="https://t.me/sahandse" target="_blank" rel="noopener" aria-label="پشتیبانی نتیجه در تلگرام">
     <span class="support-icon">↗</span>
     <span><small>نیاز به راهنمایی داری؟</small>پشتیبانی در تلگرام</span>
